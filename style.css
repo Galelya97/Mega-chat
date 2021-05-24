@@ -1,11 +1,92 @@
-body {
+body,
+html {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   list-style: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .authorization {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  background-color: coral;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 161, 87, 1) 0%,
+    rgba(238, 135, 50, 1) 50%,
+    rgba(182, 112, 0, 1) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+  min-height: 200px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+}
+
+.auth-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2a4480;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 4px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+.auth-button {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.auth-button:hover {
+  color: #2a4480;
+  cursor: pointer;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.list-column {
+  width: 30%;
+}
+
+.message-column {
+  width: 70%;
 }

@@ -7,12 +7,17 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>Chat</title>
   </head>
   <body>
     <div id="app" class="app">
-      <div id="authorization" class="authorization">
+      <div id="authorization" class="authorization hidden">
         <form class="auth-form">
           <input
             type="text"
@@ -22,7 +27,28 @@
           <button type="submit" class="auth-button">Войти</button>
         </form>
       </div>
-      <div id="main" class="main"></div>
+      <div id="main" class="main">
+        <div class="list-column">
+          <div class="user-info">
+            <div class="user-avatar"></div>
+            <div class="user-name"></div>
+          </div>
+          <div class="list-users">
+            <h1>Все пользователи</h1>
+          </div>
+        </div>
+        <div class="message-column">
+          <div class="messages"></div>
+          <form class="form">
+            <textarea
+              class="input-message"
+              rows="1"
+              placeholder="Сообщение"
+            ></textarea>
+            <button class="button-submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
